@@ -1,5 +1,4 @@
 #pragma once
-#pragma once
 #include "Node.h"
 #include <vector>
 #include <memory>
