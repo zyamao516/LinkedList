@@ -6,8 +6,8 @@ namespace node {
     template <typename T>
     struct Node {
         std::unique_ptr<T> Value;
-        std::shared_ptr<Node<T>> Next;
-        std::shared_ptr<Node<T>> Prev;
+        std::unique_ptr<Node<T>> Next;
+        T* Prev;
 
         // Constructor that takes a T as its parameter
         Node(T& NewValue) : Value(std::make_unique<T>(NewValue)) {
